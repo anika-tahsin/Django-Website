@@ -54,6 +54,10 @@ def get_name(request):
 def home(request):
 	return render(request, "main/home.html", {})
 
+def login(request):
+	if request.method == "GET":
+	  return render(request, "main/login.html", {})
+
 
 def view(request):
 	l = ToDoList.objects.all()

@@ -1,23 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-        <meta charset="UTF-8" /> 
-        <meta name="viewport" content= "width=device-width, initial-scale=1.0" /> 
-        <script src=  "https://cdn.tailwindcss.com"> 
-        </script> 
-        <title> Al-arafah Islami bank Ltd. </title>
-        
-</head>
-<body> 
+{% extends "main/base.html" %} 
+<script src=  "https://cdn.tailwindcss.com"> </script> 
+{% block title %}Al-arafah Islami bank Ltd{% endblock %} 
+{% block content %}
 <nav class="bg-white border-gray-200 dark:bg-gray-900">
-    <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+    <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-x2 p-8">
         <a href="#" class="flex items-center">
-            <img src="https://www.aibl.com.bd/wp-content/themes/aiblTheme/images/logo.png" class="h-8 mr-3" alt="AIBL Logo" />
+            <img src="https://www.aibl.com.bd/wp-content/themes/aiblTheme/images/logo.png" class="h-14 w-14 mr-4 bg-white" alt="AIBL Logo" />
             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Troubleshooting System, ICT wing, Al-arafah Islami bank Ltd.</span>
+            
         </a>
         <div class="flex items-center">
             <a href="tel:5541251234" class="mr-6 text-sm  text-gray-500 dark:text-white hover:underline"></a>
-            <a href="#" class="text-sm  text-blue-600 dark:text-blue-500 hover:underline">Login</a>
+            <a href="#" class="text-sm  text-blue-600 dark:text-blue-500 hover:underline">Logout</a>
         </div>
     </div>
 </nav>
@@ -26,20 +21,19 @@
         <div class="flex items-center">
             <ul class="flex flex-row font-medium mt-0 mr-6 space-x-8 text-sm">
                 <li>
-                    <a href="#" class="inline-block border border-white-500 rounded py-1 px-3 bg-green-500 text-white hover:bg-gray-900"  href="#" >Home</a>
+                    <a href="/" class="inline-block border border-white-500 rounded py-1 px-3 bg-green-500 text-white hover:bg-gray-900" >Home</a>
                 </li>
                 <li>
-                    <a href="#" class="inline-block border rounded hover:border-gray-200 text-white hover:bg-gray-200 py-1 px-3"  href="main/contacts.html">Contacts</a>
+                    <a href="main/contacts.html" class="inline-block border rounded hover:border-gray-200 text-white hover:bg-gray-200 py-1 px-3"  >Contacts</a>
                 </li>
                 <li>
-                    <a href="#" class="inline-block border border-gray rounded hover:border-gray-200 text-white hover:bg-gray-200 py-1 px-3"  href="#">All request forms</a>
+                    <a href="/" class="inline-block border border-gray rounded hover:border-gray-200 text-white hover:bg-gray-200 py-1 px-3"  >All request forms</a>
                 </li>
                 <li>
-                    <a href="#" class="inline-block border border-gray rounded hover:border-gray-200 text-white hover:bg-gray-200 py-1 px-3" href="#">Search</a>
+                    <a href="/" class="inline-block border border-gray rounded hover:border-gray-200 text-white hover:bg-gray-200 py-1 px-3" >Search</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-</body>
-</html>
+{% endblock %} 

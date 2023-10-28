@@ -8,4 +8,5 @@ path("view/", views.view, name="index"),
 path("home/", views.home, name="home"),
 path("create/", views.get_name, name="index"),
 path("<int:id>", views.index, name="index"),
+path("/contacts.html", views.get_name, name="contacts"),
 ]
